@@ -55,7 +55,7 @@ class MenuBottun extends React.Component {
               <Paper>
                 <MenuList role="menu">
                   <MenuItem onClick={this.handleClose}><Link to="/acount">Acount Book</Link></MenuItem>
-                  <MenuItem onClick={this.handleClose}><Link to="/acount/graph">Account Graph</Link></MenuItem>
+                  <MenuItem onClick={this.handleClose}><Link to="/table">Account Table</Link></MenuItem>
                   <MenuItem onClick={this.handleClose}>Logout</MenuItem>
                 </MenuList>
               </Paper>
