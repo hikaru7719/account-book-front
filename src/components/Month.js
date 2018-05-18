@@ -33,7 +33,7 @@ export default class Month extends React.Component{
         <div>
         <Grid container style={{flexGrow: 1,}} spacing={16}>
           <Grid item xs={12}>
-            <Grid container justify="center" className="cardContainer" style={{flexGrow: 1,margin:'auto',width:'80%'}} spacing={16}>
+            <Grid container justify="center" className="cardContainer" style={{flexGrow: 1,margin:'32px auto',width:'80%'}} spacing={16}>
             { list }
            </Grid>
           </Grid>

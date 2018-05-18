@@ -22,7 +22,7 @@ export default class Tables extends React.Component{
 
       return (
         <div>
-          <Grid container justify="center" className="cardContainer" style={{flexGrow: 1,margin:'auto'}} spacing={16}>
+          <Grid container justify="center" className="cardContainer" style={{flexGrow: 1,margin:'32px auto'}} spacing={16}>
           <Grid item xs={8}>
           <Card>
             <Table>

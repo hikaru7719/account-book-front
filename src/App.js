@@ -8,11 +8,13 @@ import TablesContainer from './containers/TablesContainer';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{paddingLeft: 240}}>
         <CssBaseline/>
         <MenuComponent/>
-        <Route path="/acount" component={MonthContainer}/>
-        <Route path="/table" component={TablesContainer}/>
+        <div>
+          <Route path="/acount" component={MonthContainer}/>
+          <Route path="/table" component={TablesContainer}/>
+        </div>
       </div>
     );
   }
