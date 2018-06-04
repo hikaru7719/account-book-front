@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import CssBaseline from 'material-ui/CssBaseline';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import MenuComponent from './components/Menu';
 import { Route } from 'react-router-dom';
 import MonthContainer from './containers/MonthContainer';
 import TablesContainer from './containers/TablesContainer';
+import Input from './components/Input';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <div>
           <Route path="/acount" component={MonthContainer}/>
           <Route path="/table" component={TablesContainer}/>
+          <Route path="/input" component={Input}/>
         </div>
       </div>
     );

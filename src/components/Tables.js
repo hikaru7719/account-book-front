@@ -3,6 +3,7 @@ import Grid from 'material-ui/Grid';
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 import Card from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
+import Button from '@material-ui/core/Button'
 
 export default class Tables extends React.Component{
 
@@ -24,6 +25,7 @@ export default class Tables extends React.Component{
         <div>
           <Grid container justify="center" className="cardContainer" style={{flexGrow: 1,margin:'32px auto'}} spacing={16}>
           <Grid item xs={8}>
+              <Button variant="contained" color="primary" onClick={() => this.props.onClick("/input")}>Add Spend</Button>
           <Card>
             <Table>
               <TableHead>
