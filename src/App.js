@@ -4,7 +4,7 @@ import MenuComponent from './components/Menu';
 import { Route } from 'react-router-dom';
 import MonthContainer from './containers/MonthContainer';
 import TablesContainer from './containers/TablesContainer';
-import Input from './components/Input';
+import Input from './containers/InputContainer';
 
 class App extends Component {
   render() {

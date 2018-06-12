@@ -31,7 +31,7 @@ export default class Tables extends React.Component{
               <TableHead>
               <TableRow>
                 <TableCell><Typography component="p">Name</Typography></TableCell>
-                <TableCell numeric><Typography component="p">Price</Typography></TableCell>
+                <TableCell numeric><Typography component="p">Cost</Typography></TableCell>
                 <TableCell numeric><Typography component="p">Type</Typography></TableCell>
                 <TableCell numeric><Typography component="p">Date</Typography></TableCell>
                 <TableCell numeric><Typography component="p">Memo</Typography></TableCell>

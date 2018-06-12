@@ -1,7 +1,13 @@
+const toList = action =>{
+  const dic = {};
+  dic[action.payload.key]=action.payload.value;
+
+  return dic;
+}
+
 const initialState = {
   allSpend:[
     {
-      "id":1,
       "name":"シャツ",
       "cost":10000,
       "type":"衣類",
@@ -9,7 +15,6 @@ const initialState = {
       "memo":"",
     },
     {
-      "id":2,
       "name":"パンツ",
       "cost":30000,
       "type":"衣類",
@@ -17,7 +22,6 @@ const initialState = {
       "memo":"",
     },
     {
-      "id":3,
       "name":"MacBookPro",
       "cost":200000,
       "type":"日用品",
@@ -25,7 +29,6 @@ const initialState = {
       "memo":"ローン払い",
     },
     {
-      "id":4,
       "name":"ベルト",
       "cost":3000,
       "type":"衣類",
@@ -33,7 +36,13 @@ const initialState = {
       "memo":"",
     }
   ],
-  spend:[],
+  spend:{
+      "name":'',
+      "cost":'',
+      "type":'',
+      "date":'',
+      "memo":'',
+  },
   error:false
 };
 
@@ -48,8 +57,16 @@ export default (state = initialState, action) => {
     case 'ADD_SPEND':
       return {
         ...state,
-        spend:state.spend.concat(action.payload.spend)
-      }
+        allSpend:state.allSpend.concat(action.payload.spend)
+      };
+
+      case 'CHANGE_VALUE':
+        console.log(toList(action));
+        return{
+            ...state,
+            spend:{...state.spend,...toList(action)},
+        }
+
 
     default :
       return state;

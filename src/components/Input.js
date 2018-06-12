@@ -18,6 +18,7 @@ class Input extends React.Component {
                         label="Name"
                         margin="normal"
                         style={{marginLeft:30,marginRight:30,width:500}}
+                        onChange={(e)=>this.props.onChange(e.target.id,e.target.value)}
                     />
                     </Grid>
 
@@ -28,6 +29,7 @@ class Input extends React.Component {
                         label="cost"
                         margin="normal"
                         style={{marginLeft:30,marginRight:30,width:500}}
+                        onChange={(e)=>this.props.onChange(e.target.id,e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -36,6 +38,7 @@ class Input extends React.Component {
                         label="type"
                         margin="normal"
                         style={{marginLeft:30,marginRight:30,width:500}}
+                        onChange={(e)=>this.props.onChange(e.target.id,e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -44,6 +47,7 @@ class Input extends React.Component {
                         label="date"
                         margin="normal"
                         style={{marginLeft:30,marginRight:30,width:500}}
+                        onChange={(e)=>this.props.onChange(e.target.id,e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -52,11 +56,12 @@ class Input extends React.Component {
                         label="memo"
                         margin="memo"
                         style={{marginLeft:30,marginRight:30,width:500}}
+                        onChange={(e)=>this.props.onChange(e.target.id,e.target.value)}
                         />
                     </Grid>
                     <Grid xs={{offset:8}}/>
                     <Grid item  style={{flexGrow: 1,margin:'32px'}}>
-                        <Button variant="contained" color="primary">Add Spend</Button>
+                        <Button variant="contained" color="primary" onClick={()=>this.props.onClick(this.props.spend)}>Add Spend</Button>
                     </Grid>
                 </form>
                 </Grid>
