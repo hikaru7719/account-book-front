@@ -5,8 +5,10 @@
   "dependencies": {
     "@material-ui/core": "^1.2.0",
     "@material-ui/icons": "^1.0.0-beta.43",
+    "date-fns": "^2.0.0-alpha.7",
     "history": "^4.7.2",
     "material-ui": "^1.0.0-beta.47",
+    "material-ui-pickers": "^1.0.0-rc.9",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
