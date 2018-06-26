@@ -5,6 +5,9 @@ const toList = action =>{
   return dic;
 }
 
+
+const date = new Date();
+const dateToString = date.getFullYear()+"/"+(date.getMonth()+1)+"/"+date.getDate()+"";
 const initialState = {
   allSpend:[
     {
@@ -40,7 +43,7 @@ const initialState = {
       "name":'',
       "cost":'',
       "type":'',
-      "date":'',
+      "date":dateToString,
       "memo":'',
   },
   error:false
