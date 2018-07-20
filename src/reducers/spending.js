@@ -60,7 +60,14 @@ export default (state = initialState, action) => {
     case 'ADD_SPEND':
       return {
         ...state,
-        allSpend:state.allSpend.concat(action.payload.spend)
+        allSpend:state.allSpend.concat(action.payload.spend),
+          spend:{
+              "name":'',
+              "cost":'',
+              "type":'',
+              "date":dateToString,
+              "memo":'',
+          }
       };
 
       case 'CHANGE_VALUE':

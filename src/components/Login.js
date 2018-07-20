@@ -18,7 +18,7 @@ class Login extends React.Component {
                         </Typography>
 
                         <Paper  style={{backgroundColor: '#444444', width:'200px',marginBottom:'30px'}}>
-                            <GitHubLogin  className={"github"} redirectUri="http://localhost:3000/auth" clientId={process.env.REACT_APP_GITHUB_ID}
+                            <GitHubLogin  className={"github"} onSuccess={(response)=>{console.log(response)}}redirectUri="http://localhost:3000/auth" clientId={process.env.REACT_APP_GITHUB_ID}
                             />
                         </Paper>
                     </Paper>
